@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{subject}-{start_date_and_time}-{#####}",
+ "creation": "2024-09-02 14:31:52.418672",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "organizer",
+  "meeting_type",
+  "mode_of_meeting",
+  "status",
+  "column_break_blym",
+  "start_date_and_time",
+  "end_date_and_time",
+  "associated_party_client",
+  "linkurl",
+  "address",
+  "section_break_hptg",
+  "usersattendees",
+  "section_break_eeyn",
+  "description",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Select",
+   "label": "Meeting Type",
+   "options": "\nInternal\nExternal"
+  },
+  {
+   "fieldname": "associated_party_client",
+   "fieldtype": "Data",
+   "label": "Associated Party/ Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mode_of_meeting",
+   "fieldtype": "Select",
+   "label": "Mode of Meeting",
+   "options": "Online\nOffline"
+  },
+  {
+   "fieldname": "section_break_eeyn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes after Meeting"
+  },
+  {
+   "fieldname": "column_break_blym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hptg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "usersattendees",
+   "fieldtype": "Table",
+   "label": "Users/Attendees",
+   "options": "Attendees User"
+  },
+  {
+   "fieldname": "linkurl",
+   "fieldtype": "Data",
+   "label": "Link/Url"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "organizer",
+   "fieldtype": "Data",
+   "label": "Organizer"
+  },
+  {
+   "fieldname": "start_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Start Date and Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "End Date and Time",
+   "reqd": 1
+  },
+  {
+   "default": "Upcoming",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Meeting Status",
+   "options": "Upcoming\nOngoing\nCompleted\nCanceled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2024-09-06 17:10:57.227684",
+ "modified_by": "Administrator",
+ "module": "Power Project",
+ "name": "Meeting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
